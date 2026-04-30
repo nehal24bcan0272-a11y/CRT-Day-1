@@ -45,4 +45,21 @@ int main() {
     return 0;
 }
     
+// program 4
+// swapping of two variable
+#include<iostream>
+using namespace std;
+int main() {
+    int a,b;
+    cin >> a >> b;
+    
+    // logicc to swap  variable value
+    int temp = a;
+    a = b;
+    b = temp;
+    
+    cout << a << "\n" <<b << endl;
+    return 0;
+}
+
     
