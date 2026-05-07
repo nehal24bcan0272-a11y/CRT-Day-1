@@ -1,0 +1,71 @@
+// program 1 
+
+#include <iostream>
+using namespace std ;
+
+void updatebyValue(int a){
+    a = 500;
+}
+ 
+void updatebyRefrence(int &a){
+    a = 500;
+    
+} 
+
+int main(){
+    int originial = 100;
+    updatebyValue(originial);
+    cout << originial << "\n";
+    updatebyRefrence(originial);
+    cout << originial;
+}
+
+
+
+// program 2 
+ // access specifier 
+ // private 
+ 
+ #include<iostream>
+ using namespace std ;
+ 
+class bankaccount{
+private:
+     int balance = 5000;
+     
+    public:
+    void  showbalance(){
+        cout << balance;
+        }
+     };
+     int main (){
+    bankaccount obj1;
+    obj1.showbalance();
+ }
+
+
+
+// program 3
+// protected access specifier 
+
+ #include<iostream>
+ using namespace std ;
+ 
+class Parent{
+protected:
+     int secretCode = 1234;
+};
+
+class child : public Parent{
+public:
+    void accessLocker(){
+        cout<< secretCode;
+    }
+};
+int main() {
+    child obj1;
+    obj1.accessLocker();
+    
+}
+
+
